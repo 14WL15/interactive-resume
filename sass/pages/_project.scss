@@ -1,0 +1,52 @@
+.demo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &-pic {
+    width: 40rem;
+    height: 25rem;
+    background-size: cover;
+    transition: all 0.1s;
+    &-1 {
+      background-image: linear-gradient(rgba(#799351, 0.3), rgba(#799351, 0.3)),
+        url(../../img/forbidden-city.png);
+      &:hover {
+        background-image: url(../../img/forbidden-city.png);
+      }
+    }
+    &-2 {
+      background-image: linear-gradient(rgba(#799351, 0.3), rgba(#799351, 0.3)),
+        url(../../img/easy-transfer.png);
+      &:hover {
+        background-image: url(../../img/easy-transfer.png);
+      }
+    }
+    &-3 {
+      background-image: linear-gradient(rgba(#799351, 0.3), rgba(#799351, 0.3)),
+        url(../../img/react-app.png);
+      &:hover {
+        background-image: url(../../img/react-app.png);
+      }
+    }
+  }
+
+  &-title {
+    justify-self: center;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: var(--tertiary-font-color);
+    }
+    &-1 {
+      grid-column: 2/3;
+      align-self: center;
+    }
+    &-2 {
+      grid-column: 1/2;
+      align-self: center;
+    }
+    &-3 {
+      grid-column: 2/3;
+      align-self: center;
+    }
+  }
+}

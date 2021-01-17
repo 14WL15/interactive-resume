@@ -1,0 +1,75 @@
+///navigation
+.navbar {
+  display: grid;
+  grid-gap: 3rem;
+  justify-content: center;
+
+  &__item {
+    font-size: 1.6rem;
+    list-style: none;
+    font-family: "Playfair Display", serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 1.3rem;
+  }
+
+  &__links {
+    color: var(--secondary-font-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--tertiary-font-color);
+    }
+  }
+}
+////button
+.btn {
+  color: var(--tertiary-font-color);
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  border-radius: 5%;
+  font-size: 2rem;
+  border: var(--tertiary-font-color) solid 1.5px;
+  padding: 1rem;
+
+  &:hover {
+    background-color: var(--tertiary-font-color);
+    color: var(--primary-red-color);
+  }
+
+  &__resume {
+    justify-self: center;
+    align-self: start;
+    text-decoration: none;
+  }
+}
+
+///icon
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--primary-font-color-light);
+}
+
+////nav toggle
+.nav__toggle {
+  list-style: none;
+
+  &-item {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+}
+.btn-toggle {
+  color: var(--tertiary-font-color);
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: var(--primary-font-color);
+  }
+}

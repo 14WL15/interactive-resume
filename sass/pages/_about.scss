@@ -1,0 +1,45 @@
+.about {
+  &__title {
+    @include section-title;
+
+    &::after {
+      @include title-linebreak;
+    }
+  }
+
+  &__detail {
+    grid-column: 1/2;
+  }
+
+  &__skill {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    list-style: none;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  margin-left: 8rem;
+  width: 24rem;
+  height: 26rem;
+  background-image: linear-gradient(rgba(#799351, 0.3), rgba(#799351, 0.3)),
+    url(../../img/myPhoto.jpg);
+  background-size: cover;
+  transition: all 0.1s;
+
+  ///border style
+  border: 5px transparent;
+  outline: solid var(--tertiary-font-color);
+  outline-offset: 10px;
+
+  &:hover {
+    background-image: url(../img/myPhoto.jpg);
+    outline-offset: 15px;
+  }
+}

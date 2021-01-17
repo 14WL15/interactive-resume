@@ -1,0 +1,30 @@
+.experience {
+  &__title {
+    @include section-title;
+
+    &::after {
+      @include title-linebreak;
+    }
+  }
+
+  &__subtitle {
+    grid-column: 1/-1;
+    &-name {
+      font-size: $narrow-title;
+      color: var(--primary-font-color);
+    }
+  }
+  &__description {
+    font-size: $narrow-paragraph;
+    color: var(--primary-font-color-light);
+  }
+  &__period {
+    font-size: 1.2rem;
+    color: var(--primary-font-color-light);
+    font-family: "Playfair Display", serif;
+  }
+}
+
+.iata {
+  height: max-content;
+}

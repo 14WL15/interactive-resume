@@ -1,0 +1,12 @@
+.section__footer {
+  @include section-layout-wide;
+  margin-top: 15rem;
+  &-logo {
+    justify-self: center;
+    height: 20rem;
+    margin-bottom: 5rem;
+  }
+  &-text {
+    justify-self: center;
+  }
+}

@@ -1,0 +1,63 @@
+//////////side bar//////////////
+.sidebar {
+  grid-row: 1/-1;
+  position: sticky;
+  top: 2rem;
+
+  &__left {
+    grid-column: side-left-start/side-left-end;
+    height: 100vh;
+    top: 2rem;
+    display: grid;
+    grid-template-rows: 60% repeat(3, 1fr);
+  }
+
+  &__right {
+    grid-column: side-right-start/side-right-end;
+    height: 50vh;
+    display: grid;
+  }
+}
+
+.logo {
+  width: 7rem;
+}
+
+//////////header section//////////////
+.header {
+  @include section-layout-wide;
+  grid-template-columns: min-content min-content 1fr;
+  grid-gap: 2rem;
+  &__intro {
+    color: var(--tertiary-font-color);
+    font-family: "Playfair Display", serif;
+  }
+  &__name {
+    color: var(--primary-font-color);
+  }
+  &__detail {
+    width: 60%;
+    padding-top: 9rem;
+  }
+}
+
+//////////about section//////////////
+.introduction {
+  @include section-layout-wide;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content min-content min-content;
+  grid-gap: 2rem;
+}
+
+//////////experience section//////////////
+.experience {
+  // height: 100vh;
+  @include section-layout-narrow;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 4rem;
+}
+
+///////project section////////////
+.project {
+  @include section-layout-wide;
+}
